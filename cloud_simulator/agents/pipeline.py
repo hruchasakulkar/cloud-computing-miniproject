@@ -24,16 +24,16 @@ from pathlib import Path
 
 # Try importing the Detection Agent from Member 2
 try:
-    from detection_agent import DetectionAgent
+    from .detection_agent import DetectionAgent
     detector = DetectionAgent()
 except ImportError:
     detector = None
     print("Warning: DetectionAgent not found. Pipeline will skip ML detection step.")
 
-from investigation_agent import investigate_event
-from risk_agent import assess_risk
-from response_agent import generate_response
-from supervisor import supervise_response
+from .investigation_agent import investigate_event
+from .risk_agent import assess_risk
+from .response_agent import generate_response
+from .supervisor import supervise_response
 
 
 # ---------------------------------------------------------
