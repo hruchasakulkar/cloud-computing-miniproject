@@ -16,16 +16,16 @@ from collections import Counter
 
 # Import Detection
 try:
-    from detection_agent import DetectionAgent
+    from .detection_agent import DetectionAgent
     detector = DetectionAgent()
 except ImportError:
     detector = None
     print("Warning: DetectionAgent not found.")
 
-from investigation_agent import investigate_event
-from risk_agent import assess_risk
-from response_agent import generate_response
-from supervisor import supervise_response
+from .investigation_agent import investigate_event
+from .risk_agent import assess_risk
+from .response_agent import generate_response
+from .supervisor import supervise_response
 
 
 # ---------------------------------------------------------
