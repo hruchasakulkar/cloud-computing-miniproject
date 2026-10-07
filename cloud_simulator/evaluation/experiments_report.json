@@ -1,0 +1,35 @@
+{
+    "E1_Normal_Activity": {
+        "total_events": 1000,
+        "false_positives": 200,
+        "total_latency_sec": 24.879151344299316,
+        "false_positive_rate": 0.2,
+        "avg_latency_ms": 24.879151344299316
+    },
+    "E2_Attack_Scenarios": {
+        "overall_detection_rate": 0.5,
+        "avg_latency_ms": 30.918542742729187,
+        "scenarios": {
+            "data_exfiltration": {
+                "total_attacks": 100,
+                "detected": 100,
+                "detection_rate": 1.0
+            },
+            "logging_disabled": {
+                "total_attacks": 100,
+                "detected": 0,
+                "detection_rate": 0.0
+            },
+            "privilege_escalation": {
+                "total_attacks": 100,
+                "detected": 0,
+                "detection_rate": 0.0
+            },
+            "brute_force": {
+                "total_attacks": 100,
+                "detected": 100,
+                "detection_rate": 1.0
+            }
+        }
+    }
+}
